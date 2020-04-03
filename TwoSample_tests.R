@@ -39,3 +39,11 @@ wilcox.test(LungCap ~ Smoke, mu = 0, alt = 'two.sided', paired = F,
             conf.int = T, conf.level = 0.95,
             exact = F, correct = T)
 
+
+
+# kolmogorov-smirnov
+# H0: distribution of two types are the same
+# two sided
+ks.test(LungCap[Smoke=='yes'], LungCap[Smoke=='no'], alt = 'two.sided', 
+        paired = T, exact = F)
+
