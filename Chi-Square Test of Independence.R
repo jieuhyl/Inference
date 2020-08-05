@@ -29,12 +29,15 @@ round(chisq$residuals, 3)
 
 corrplot(chisq$residuals, is.cor = FALSE)
 
-# Contibution in percentage (%)
+# Contribution in percentage (%)
 contrib <- 100*chisq$residuals^2/chisq$statistic
 round(contrib, 3)
 
 # Visualize the contribution
 corrplot(contrib, is.cor = FALSE)
+
+
+
 
 # example ====================================================================
 # Import the data
