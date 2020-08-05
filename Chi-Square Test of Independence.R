@@ -6,7 +6,6 @@ setwd("C:/Users/Jie.Hu/Desktop/TURF/0804")
 set.seed(1337)
 
 library(corrplot)
-corrplot(chisq$residuals, is.cor = FALSE)
 
 # read data
 df <- read.csv('chiq_test.csv', header=T, stringsAsFactors=FALSE)
